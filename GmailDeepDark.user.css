@@ -1,0 +1,951 @@
+/* ==UserStyle==
+@name Gmail DeepDark
+@namespace github.com/RaitaroH/Gmail-DeepDark
+@homepageURL https://github.com/RaitaroH/Gmail-DeepDark
+@version 1.0.0
+@updateURL https://rawgit.com/RaitaroH/Gmail-DeepDark/master/GmailDeepDark.user.css
+@description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (Gmail dark theme)
+@author RaitaroH
+@license GNU-V3.0
+
+@preprocessor uso
+@var select mainColor 'Main color' {
+	"DeepDark": "#00adee",
+	"BreezeDark": "#3DAEE9",
+	"Vertex Dark": "#4080fb",
+	"Arc Dark": "#5294E2",
+	"Firefox Dark": "#5675B9",
+	"Firefox57": "#4080FB",
+	"Discord": "#7289DA",
+	"YouTubeDark": "#E52117",
+	"Mint-Y-Dark": "#9AB87C",
+	"9anime": "#723f8c",
+	"Black&White": "#ffffff",
+	"Yellow_petrocompletions": "#FFC700",
+	"Yellow2": "#FFC700",
+	"Ubuntu_grey": "#EF7847",
+	"Ubuntu_purple": "#EF7847",
+	"Orange": "#ff6905",
+	"Jisho_夜明け": "#EF7D6C"
+}
+
+@var select mainBackground 'Main background color' {
+	"DeepDark": "#111111",
+	"BreezeDark": "#232629",
+	"Vertex Dark": "#2B2B2C",
+	"Arc Dark": "#343944",
+	"Firefox Dark": "#272B35",
+	"Firefox57": "#0C0C0D",
+	"Discord": "#1E2124",
+	"YouTubeDark": "#111111",
+	"Mint-Y-Dark": "#2F2F2F",
+	"9anime": "#0B0A0D",
+	"Black&White": "#000000",
+	"Yellow_petrocompletions": "#141414",
+	"Yellow2": "#0a0800",
+	"Ubuntu_grey": "#312D2A",
+	"Ubuntu_purple": "#2C071A",
+	"Orange": "#0a0400",
+	"Jisho_夜明け": "#332222"
+}
+
+@var select secondBackground 'Second background color' {
+	"DeepDark": "#181818",
+	"BreezeDark": "#2a2e32",
+	"Vertex Dark": "#353638",
+	"Arc Dark": "#383C4A",
+	"Firefox Dark": "#181D20",
+	"Firefox57": "#252526",
+	"Discord": "#2F3136",
+	"YouTubeDark": "#232323",
+	"Mint-Y-Dark": "#383838",
+	"9anime": "#17151C",
+	"Black&White": "#0a0a0a",
+	"Yellow_petrocompletions": "#202222",
+	"Yellow2": "#0c0a04",
+	"Ubuntu_grey": "#3D3C38",
+	"Ubuntu_purple": "#430B28",
+	"Orange": "#0e0702",
+	"Jisho_夜明け": "#2A1B1B"
+}
+
+@var select hoverBackground 'Hover background color' {
+	"DeepDark": "#232323",
+	"BreezeDark": "#31363b",
+	"Vertex Dark": "#515254",
+	"Arc Dark": "#414A59",
+	"Firefox Dark": "#353A44",
+	"Firefox57": "#323234",
+	"Discord": "#484B51",
+	"YouTubeDark": "#343434",
+	"Mint-Y-Dark": "#404040",
+	"9anime": "#1E1C25",
+	"Black&White": "#0f0f0f",
+	"Yellow_petrocompletions": "#353838",
+	"Yellow2": "#0f0d05",
+	"Ubuntu_grey": "#59564D",
+	"Ubuntu_purple": "#520D30",
+	"Orange": "#110903",
+	"Jisho_夜明け": "#863B2F"
+}
+
+@var select mainText 'Main text color' {
+	"DeepDark": "#eff0f1",
+	"BreezeDark": "#eff0f1",
+	"Vertex Dark": "#F3F3F5",
+	"Arc Dark": "#C1C8D1",
+	"Firefox Dark": "#E3EEF9",
+	"Firefox57": "#F9F9FA",
+	"Discord": "#FFFFFF",
+	"YouTubeDark": "#E1E1E1",
+	"Mint-Y-Dark": "#FFFFFF",
+	"9anime": "#B4B4B4",
+	"Black&White": "#b4b4b4",
+	"Yellow_petrocompletions": "#EFF0F1",
+	"Yellow2": "#fffdf5",
+	"Ubuntu_grey": "#F2F1EF",
+	"Ubuntu_purple": "#F2F1EF",
+	"Orange": "#fff9f5",
+	"Jisho_夜明け": "#EFB26C"
+}
+
+@var select dimmerText 'Secondary text color' {
+	"DeepDark": "#CCCCCC",
+	"BreezeDark": "#bdc3c7",
+	"Vertex Dark": "#AEAFB0",
+	"Arc Dark": "#B3BAC5",
+	"Firefox Dark": "#606376",
+	"Firefox57": "#D0D0D0",
+	"Discord": "#ADA8AA",
+	"YouTubeDark": "#7F7F7F",
+	"Mint-Y-Dark": "#D5DADA",
+	"9anime": "#747474",
+	"Black&White": "#828282",
+	"Yellow_petrocompletions": "#9F9999",
+	"Yellow2": "#fff8e1",
+	"Ubuntu_grey": "#E6E5E3",
+	"Ubuntu_purple": "#E6E5E3",
+	"Orange": "#ffede1",
+	"Jisho_夜明け": "#986E3F"
+}
+
+==/UserStyle== */
+
+
+@-moz-document domain("mail.google.com"), domain("hangouts.google.com") {
+
+/*For the new Material Design for Gmail*/
+
+/*Theme made by RaitaroH @https://github.com/RaitaroH/Gmail-DeepDark*/
+
+/*GNU General Public License v3.0.*/
+
+/*1.0.0*/
+
+	/*Main color variables*/
+	:root
+	{
+		/*User colors*/
+		--main-color: /*[[mainColor]]*/;
+		--main-background: /*[[mainBackground]]*/;
+		--second-background: /*[[secondBackground]]*/;
+		--hover-background: /*[[hoverBackground]]*/;
+		--main-text: /*[[mainText]]*/;
+		--dimmer-text: /*[[dimmerText]]*/;
+
+		/*DeepDark colors*/
+		/*
+		--main-color: #00adee;
+		--main-background: #111111;
+		--second-background: #181818;
+		--hover-background: #232323;
+		--main-text: #eff0f1;
+		--dimmer-text: #CCCCCC;
+		*/
+
+		/*KDE colors*/
+		/*
+		--main-color: #3DAEE9;
+		--main-background: #232629;
+		--second-background: #2a2e32;
+		--hover-background: #31363b;
+		--main-text: #eff0f1;
+		--dimmer-text: #bdc3c7;
+		*/
+
+		/*Vertex Dark colors*/
+		/*
+		--main-color: #4080fb;
+		--main-background: #2B2B2C;
+		--second-background: #353638;
+		--hover-background: #515254;
+		--main-text: #F3F3F5;
+		--dimmer-text: #AEAFB0;
+		*/
+
+		/*Arc Dark colors*/
+		/*
+		--main-color: #5294E2;
+		--main-background: #343944;
+		--second-background: #383C4A;
+		--hover-background: #414A59;
+		--main-text: #C1C8D1;
+		--dimmer-text: #B3BAC5;
+		*/
+
+		/*Firefox Dark colors*/
+		/*
+		--main-color: #5675B9;
+		--main-background: #272B35;
+		--second-background: #181D20;
+		--hover-background: #353A44;
+		--main-text: #E3EEF9;
+		--dimmer-text: #606376;
+		*/
+
+		/*Firefox57 Dark colors*/
+		/*
+		--main-color: #4080FB;
+		--main-background: #0C0C0D;
+		--second-background: #252526;
+		--hover-background: #323234;
+		--main-text: #F9F9FA;
+		--dimmer-text: #D0D0D0;
+		*/
+
+		/*Discord colors*/
+		/*
+		--main-color: #7289DA;
+		--main-background: #1E2124;
+		--second-background: #2F3136;
+		--hover-background: #484B51;
+		--main-text: #FFFFFF;
+		--dimmer-text: #ADA8AA;
+		*/
+
+		/*YouTube dark colors*/
+		/*
+		--main-color: #E52117;
+		--main-background: #111111;
+		--second-background: #232323;
+		--hover-background: #343434;
+		--main-text: #E1E1E1;
+		--dimmer-text: #7F7F7F;
+		*/
+
+		/*YouTube light colors*/
+		/*
+		--main-color: #E52117;
+		--main-background: #F9F9F9;
+		--second-background: #FFFFFF;
+		--hover-background: #EAEAEA;
+		--main-text: #111111;
+		--dimmer-text: #43434B;
+		*/
+
+		/*Mint-Y-Dark colors*/
+		/*
+		--main-color: #9AB87C;
+		--main-background: #2F2F2F;
+		--second-background: #383838;
+		--hover-background: #404040;
+		--main-text: #FFFFFF;
+		--dimmer-text: #D5DADA;
+		*/
+
+		/*9anime colors*/
+		/*
+		--main-color: #723f8c;
+		--main-background: #0B0A0D;
+		--second-background: #17151C;
+		--hover-background: #1E1C25;
+		--main-text: #B4B4B4;
+		--dimmer-text: #747474;
+		*/
+
+		/*Black and white*/
+		/*
+		--main-color: #ffffff;
+		--main-background: #000000;
+		--second-background: #0a0a0a;
+		--hover-background: #0f0f0f;
+		--main-text: #b4b4b4;
+		--dimmer-text: #828282;
+		*/
+
+		/*Yellow (colors from petrocompletions)*/
+		/*
+		--main-color: #FFC700;
+		--main-background: #141414;
+		--second-background: #202222;
+		--hover-background: #353838;
+		--main-text: #EFF0F1;
+		--dimmer-text: #9F9999;
+		*/
+
+		/*Yellow 2*/
+		/*
+		--main-color: #ffc700;
+		--main-background: #0a0800;
+		--second-background: #0c0a04;
+		--hover-background: #0f0d05;
+		--main-text: #fffdf5;
+		--dimmer-text: #fff8e1;
+		*/
+
+		/*Ubuntu grey colors*/
+		/*
+		--main-color: #EF7847;
+		--main-background: #312D2A;
+		--second-background: #3D3C38;
+		--hover-background: #59564D;
+		--main-text: #F2F1EF;
+		--dimmer-text: #E6E5E3;
+		*/
+
+		/*Ubuntu purple colors*/
+		/*
+		--main-color: #EF7847;
+		--main-background: #2C071A;
+		--second-background: #430B28;
+		--hover-background: #520D30;
+		--main-text: #F2F1EF;
+		--dimmer-text: #E6E5E3;
+		*/
+
+		/*Orange*/
+		/*
+		--main-color: #ff6905;
+		--main-background: #0a0400;
+		--second-background: #0e0702;
+		--hover-background: #110903;
+		--main-text: #fff9f5;
+		--dimmer-text: #ffede1;
+		*/
+
+		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
+		/*
+		--main-color: #EF7D6C;
+		--main-background: #332222;
+		--second-background: #2A1B1B;
+		--hover-background: #863B2F;
+		--main-text: #EFB26C;
+		--dimmer-text: #986E3F;
+		*/
+	}
+
+	/*Scrollbar fix for chrome*/
+	body::-webkit-scrollbar-thumb
+	{
+		height: 56px;
+		background: hsla(0, 0%, 53.3%, .4);
+	}
+	body::-webkit-scrollbar
+	{
+		width: 8px;
+	}
+
+	/*Changed text highlight*/
+	::selection
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	::-moz-selection
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+
+	/*Outline for links*/
+ 	a
+ 	{
+     		outline-color: var(--main-color) !important;
+	}
+	a:hover
+	{
+		color: var(--main-color) !important;
+		fill: var(--main-color) !important;
+	}
+	/*Outline for comments*/
+	#content-text.ytd-comment-renderer
+	{
+    	outline: none !important;
+	}
+
+	/*Background for the entire page*/
+	html, body, .aAT, .aAU, .bkL > .no, .aeJ, html.aAX
+	{
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+
+	/*loading*/
+	#loading, #loading > div:nth-child(1) > div:nth-child(1)
+	{
+		background-color: var(--main-background) !important;
+	}
+	#nlpt::before, .eB4Etf
+	{
+		background: var(--main-color) !important;
+	}
+	#nlpt
+	{
+		background: var(--hover-background) !important;
+	}
+	.msgb
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.submit_as_link
+	{
+		color: var(--main-color) !important;
+	}
+
+	svg
+	{
+		color: var(--main-text) !important;
+		opacity: 1 !important;
+	}
+	svg:hover
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*Navbar*/
+	.aiw .qp
+	{
+		background: var(--second-background) !important;
+	}
+	/*Search*/
+	.gb_rf, .gb_Qe button, .gb_Qe
+	{
+		background: var(--hover-background) !important;
+	}
+	/*search icon and arrow icon*/
+	.gb_Qe button:hover svg
+	{
+		fill: var(--main-color) !important;
+	}
+	/*text and placeholder text*/
+	.gb_9e, .gb_Qe.gb_8e input::-moz-placeholder, .gb_Qe:not(.gb_8e) input::-moz-placeholder
+	{
+		color: var(--main-text) !important;
+	}
+	/*search results*/
+	.gssb_e, .gssb_m
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	/*separator*/
+	.gssb_l
+	{
+		background: var(--main-background) !important;
+	}
+	.gsfs:hover
+	{
+		background: var(--second-background) !important;
+		border-left-color: var(--main-color) !important;
+	}
+	/*sender*/
+	.gssb_a, .gssb_a td
+	{
+		color: var(--main-text) !important;
+	}
+	.asor_e
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*search icon*/
+	.asor
+	{
+		filter: invert(1);
+	}
+	/*advanced search*/
+	.ZF-z6, .ZF-zT, .ZF-Av .lJ, .ZF-Av .lN
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.boo > .ZG, .bs0 > .acM
+	{
+		color: var(--main-text) !important;
+	}
+	.T-axO .J-JN-M-I-Jm, .bs1 + .bs3, .btj + .aD
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.T-axO .J-JN-M-I-JG, .bs1 + .bs3::before, .btj + .aD::before, .bs5::after
+	{
+		filter: invert(1);
+	}
+	/*input area*/
+	.boo .nr, .boo .nr:focus, .boo .nr:active
+	{
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
+		border-color: var(--second-background) !important;
+	}
+	/*suggestion*/
+	.ah .Jd-Je, .aiv
+	{
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.aiv .am > .ao5
+	{
+		color: var(--main-color) !important;
+	}
+	.aiv .am > .Sr
+	{
+		color: var(--main-text) !important;
+	}
+	/*search button*/
+	.T-I-atl
+	{
+		background: var(--main-color) !important;
+	}
+
+	/*google apps*/
+	.gb_dc {
+		filter: invert(100%);
+	}
+	/*drawer*/
+	.gb_da
+	{
+		background: var(--second-background) !important;
+	}
+	.gb_aa
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*drawer arrow*/
+	.gb_rb
+	{
+		border-bottom-color: var(--hover-background) !important;
+	}
+	/*more*/
+	.gb_ea
+	{
+		background: var(--hover-background) !important;
+	}
+	.gb_ea, .gb_X
+	{
+		color: var(--main-text) !important;
+	}
+	/*element hover*/
+	.gb_T:hover .gb_X
+	{
+		background: var(--second-background) !important;
+	}
+	.gb_T:hover a
+	{
+		border-color: var(--second-background) !important;
+	}
+	.gb_T:hover .gb_X, .gb_ea:hover
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*User*/
+	.gb_aa, .gb_Hb
+	{
+		background: var(--second-background) !important;
+	}
+	.gb_Cb, .gb_vb, #gb a.gb_vb.gb_vb, .gb_wb a, #gb .gb_wb.gb_wb a
+	{
+		color: var(--main-color) !important;
+	}
+	.gb_Eb
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.gb_zb .gb_Fb, .gb_za, #gb a.gb_za.gb_za, .gb_Aa
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.gb_zb .gb_Fb:hover, .gb_za:hover, #gb a.gb_za.gb_za:hover, .gb_Aa:hover
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*Sidebar*/
+	.aeN, .gssb_l
+	{
+		background: var(--second-background) !important;
+	}
+	/*compose*/
+	.z0 > .L3
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.TO .nU > .n0, .TO.NQ .nU > .n0, .TO.nZ .nU > .n0, .ah9 > .CJ, .n3 > .CL > .CK
+	{
+		color: var(--main-text) !important;
+	}
+	/*selected*/
+	.wT > .n3 .byl .aim .nZ
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.byl .TO.nZ > .aHS-bnt .n0, .nZ > .aHS-bnt .bsU
+	{
+		color: var(--main-color) !important;
+	}
+	/*hover*/
+	.TO.NQ, .n6 .ah9:hover, .n6 .ah9.aiu:hover, .n6 .ah9:focus, .CL.NQ, .CL:hover, .CL:focus
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.TO:hover .nU > .n0, .TO.NQ:hover .nU > .n0, .TO.nZ:hover .nU > .n0, .ah9:hover > .CJ, .n3:hover > .CL > .CK
+	{
+		color: var(--main-color) !important;
+	}
+	/*category image*/
+	.nZ > div, .aHS-bnt .qj::before
+	{
+		filter: grayscale(1) brightness(250%);
+	}
+	.qr, .air .G-asx, .CL::before, .n4 .G-asx
+	{
+		filter: invert(1);
+	}
+	/*user border*/
+	body .azewN
+	{
+		border-color: var(--hover-background) !important;
+	}
+	body.td .kr
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*chats*/
+	.MM a, .tYe0Ve > a
+	{
+		color: var(--main-color) !important;
+	}
+	.kgwWAf
+	{
+		background: var(--second-background) !important;
+	}
+	.MM > div:nth-child(2)
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.T-P
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*controls at the bottom*/
+	.aj5.J-KU-Jg
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.J-KU .aH3, .J-KU-KO .aH3, .J-KU.a65 .aj2, .J-KU-KO.a65 .aj2, .J-KU-JW.a65 .aj2,
+	.J-KU .a8V, .J-KU-KO .a8V, .J-KU-JW .a8V
+	{
+		filter: invert(1);
+	}
+	.amn > .ams
+	{
+		box-shadow: none !important;
+	}
+
+	/*Right sidebar*/
+	.brC-aT5-aOt-Jw
+	{
+		background: var(--second-background) !important;
+	}
+	.bAw .brC-aT5-aOt-Jw
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*item hover*/
+	.bse-bvF-I-JW .bse-bvF-JX-Jw
+	{
+		background-color: var(--hover-background) !important;
+	}
+
+	/*Select/action icons*/
+	.bzn .G-Ni > div, .adj, .amI, .amJ, .aos, .adk, .amJ
+	{
+		filter: invert(1) grayscale(1) brightness(250%);
+		opacity: .9 !important;
+	}
+	.Dj
+	.J-N, .asd
+	{
+		color: var(--main-text) !important;
+	}
+	/*dropdown menus*/
+	.J-M, .J-N-JT, .J-N-JW
+	{
+		background: var(--hover-background) !important;
+	}
+	.J-N, .asd
+	{
+		color: var(--main-text) !important;
+	}
+	.J-N-JT > *, .J-N-JW > *
+	{
+		color: var(--main-color) !important;
+	}
+	.J-Kh
+	{
+		border-color: var(--hover-background) !important;
+	}
+
+	/*Mail list*/
+	/*category names*/
+	.aKh
+	{
+		background: var(--main-background) !important;
+	}
+	/*selected*/
+	.aAy > .aKp
+	{
+		filter: invert(1) grayscale(1) brightness(250%);
+	}
+	/*title*/
+	.aKx > .aKz
+	{
+		color: var(--main-text) !important;
+	}
+	.J-KU-KO.aIf-aLe .aKz, .aRz.J-KU:hover .aKz
+	{
+		color: var(--main-color) !important;
+	}
+	.J-KU-KO.aIf-aLe::before
+	{
+		background: var(--main-color) !important;
+	}
+	/*all selected*/
+	.Tm .ya
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.ya .x2::before, .ya .x8::before
+	{
+		background-color: var(--main-color) !important;
+	}
+	#\:nn
+	{
+		color: var(--main-text) !important;
+	}
+	/*emails items*/
+	/*unread*/
+	.zE
+	{
+		background: var(--second-background) !important;
+		color: var(--main-color) !important;
+	}
+	.zE .y2
+	{
+		color: var(--main-color) !important;
+	}
+	/*read*/
+	.yO
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.y2, .yO > .xW
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*text for selected items*/
+	.x7 .yP, .x7 .xT, .x7 .y2
+	{
+		color: var(--main-color) !important;
+	}
+	/*email icons*/
+	.xY > .T-Jo-Jp, .xY > .T-Jo, td.apU > .T-KT.aXw::before, .bqY
+	{
+		filter: invert(1) grayscale(1) brightness(250%);
+	}
+	/*view content*/
+	.aOd.T-I
+	{
+		color: var(--main-color) !important;
+	}
+	/*draft*/
+	.boq
+	{
+		color: var(--main-color) !important;
+	}
+	.TD
+	{
+		background: var(--second-background) !important;
+	}
+	.Tm .TC
+	{
+		color: var(--main-text) !important;
+	}
+
+	/*Mails*/
+	.iY
+	{
+		background: var(--second-background) !important;
+	}
+	/*title*/
+	.ha > .hP
+	{
+		color: var(--main-color) !important;
+	}
+	/*sender*/
+	.hx .gD, .gD, .ac2
+	{
+		color: var(--main-color) !important;
+	}
+	/*message*/
+	.g6, .hx .ii, .a3s, .h1
+	{
+		color: var(--main-text) !important;
+	}
+	/*meta*/
+	.hx .hb, .go, .ig .g3, .hI .g3, .iv .g3, .im p, .im > p:nth-child(1), .im,
+	#\:si > p:nth-child(2), #\:sc > p:nth-child(2),
+	p[style*="font-size:small"],
+	.md.mj, .aeU .ma, .ma .mb, .ae3 .l6
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.ii a[href], .l8, .l9
+	{
+		color: var(--main-text) !important;
+	}
+	.gt a:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*more*/
+	div.ajR
+	{
+		background: var(--hover-background) !important;
+	}
+	div.ajR .ajT
+	{
+		filter: invert(1);
+	}
+	/*down controls*/
+	.wR > .amn, .wR, .amn
+	{
+		background: var(--main-background) !important;
+	}
+	.ams.bkH::before, .ams.bkI::before, .ams.bkG::before
+	{
+		filter: invert(1);
+	}
+	.amn > .ams
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.amn > .ams:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*icons*/
+	.ajy > .ajz, .gx, .gq, .g1, .gZ, .bi4 > .T-KT:not(.T-KT-Jp):not(.byM)::before, .hB, .mL, .hA, .mK, .mI
+	{
+		filter: invert(1);
+	}
+	/*extra info*/
+	.ajA
+	{
+		background: var(--hover-background) !important;
+	}
+	.gG .gI
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.aHq, .gt a
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*Compose*/
+	.Hy .m
+	{
+		background: var(--main-background) !important;
+	}
+	/*page*/
+	.aaZ, .Am, .aoP .Ar
+	{
+		background: var(--second-background) !important;
+	}
+	/*input*/
+	.vO, .aoT, .dF .dG, .nr, .Ar
+	{
+		color: var(--main-text) !important;
+		background: var(--second-background) !important;
+	}
+	/*added email*/
+	.vR > .vN, .vN, .vR, .eV > .oj .aA6, .wO
+	{
+		border: 1px solid var(--hover-background) !important;
+		background: var(--hover-background) !important;
+	}
+	.az9, .vN > .vT
+	{
+		color: var(--main-text) !important;
+	}
+	.eV > .oj .aA6
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.vN > .vM
+	{
+		filter: invert(1);
+	}
+	/*controls*/
+	.J-Z, .bv8, .btC
+	{
+		background: var(--hover-background) !important;
+	}
+	.J-Z-I, .J-Z-M-I, .J-Ks-KO .J-N-Jo, .asi .J-Ks-KO::before, .Kj-JD-K7-Jq::after
+	{
+		filter: invert(1);
+	}
+	/*chosen font*/
+	.J-Ks-KO .J-N-Jz
+	{
+		color: var(--main-text) !important;
+	}
+	/*colors*/
+	.aAi
+	{
+		color: var(--main-text) !important;
+	}
+	/*edit links*/
+	div.Kj-JD, .J-KU-Jg, .LW-KX .J-KU-Jz, .LW-KX .J-KU-Jg, .LW-KX-Jm, .LW-KX .J-KU
+	{
+		background: var(--hover-background) !important;
+	}
+	span.Kj-JD-K7-K0, div.Kj-JD-Jz, .J-KU-Jg-Zq .J-KU, .J-Ke-I, .LW-Ke-JD-JI-K0 a
+	{
+		color: var(--main-text) !important;
+	}
+	div.Kj-JD-Jl > button.J-at1-atl::before, div.Kj-JD-Jl > button.J-at1-auR::before
+	{
+		background: var(--main-color) !important;
+	}
+	/*emoji*/
+	.a8u
+	{
+		background: var(--hover-background) !important;
+	}
+	.a8F, .a8u, .biz
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.a8z > *
+	{
+		filter: invert(1);
+		opacity: .8 !important;
+	}
+}
