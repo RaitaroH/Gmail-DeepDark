@@ -1,6 +1,8 @@
-# Template-DeepDark
+# Gmail-DeepDark
 ![alt tag](./Images/Gmail%20-%20DeepDark.png)
 Emails should be written and read in the dark. May the dark be kinder on thine eyes. (Gmail dark theme)
+
+### NOTE: This is for the new august 2018+ gmail.
 
 This is a dark theme for Gmail inspired by [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/?src=search). 
 
