@@ -2,7 +2,7 @@
 @name Gmail DeepDark
 @namespace github.com/RaitaroH/Gmail-DeepDark
 @homepageURL https://github.com/RaitaroH/Gmail-DeepDark
-@version 1.0.3
+@version 1.0.4
 @updateURL https://rawgit.com/RaitaroH/Gmail-DeepDark/master/GmailDeepDark.user.css
 @description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (Gmail dark theme)
 @author RaitaroH
@@ -140,7 +140,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*1.0.3*/
+/*1.0.4*/
 
 	/*Main color variables*/
 	:root
@@ -654,6 +654,93 @@
 	{
 		box-shadow: none !important;
 	}
+	/*status*/
+	.RM
+	{
+		color: var(--main-text) !important;
+	}
+	.VQ7Kyb
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.Dy:hover
+	{
+		filter: invert(1);
+	}
+	/*titles*/
+	.YAtp9b, .NLK4Q
+	{
+		color: var(--main-text) !important;
+	}
+	/*elements*/
+	.ahRshd .wxPY
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*checks*/
+	body.muPwQb .X.B .mnIV2e
+	{
+		filter: invert(1);
+	}
+	/*separators*/
+	.Qcw3ab, .ewttPb
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*buttons*/
+	.Yo .z-b-G, .Lo .vo > button, .vr .z-b-G
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.c-i
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.c-k, .c-Fr, .c-jq
+	{
+		color: var(--main-text) !important;
+	}
+	.c-k:hover, .c-Fr:hover, .c-jq:hover, .n7wQec .c-k-t:hover
+	{
+		color: var(--main-color) !important;
+		background: var(--hover-background) !important;
+	}
+	/*extra actions*/
+	.bi97z
+	{
+		color: var(--main-text) !important;
+	}
+	.bi97z:hover::before, .bi97z:hover
+	{
+		background: transparent !important;
+		color: var(--main-color) !important;
+	}
+	/*categories*/
+	.aOY59
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.rNeXgf
+	{
+		color: var(--main-text) !important;
+	}
+	.OYecEb, .i8deMd
+	{
+		filter: invert(1);
+	}
+	.Uf::after, .muPwQb.x27tad *
+	{
+		box-shadow: none !important;
+	}
+	/*links*/
+	.aFBJdb .lowdbc
+	{
+		color: var(--main-color) !important;
+	}
 
 	/*Right sidebar*/
 	.brC-aT5-aOt-Jw
@@ -668,6 +755,33 @@
 	.bse-bvF-I-JW .bse-bvF-JX-Jw
 	{
 		background-color: var(--hover-background) !important;
+	}
+	/*new group*/
+	input[type="text"]::-moz-placeholder
+	{
+		color: var(--main-text) !important;
+	}
+	.Ahnnze.kq
+	{
+		border-color: transparent !important;
+	}
+	.H3qADd
+	{
+		color: var(--main-text) !important;
+	}
+	/*add*/
+	.EFnEWc:focus, .EFnEWc:hover
+	{
+		background: var(--hover-background) !important;
+	}
+	.dXLA8e
+	{
+		filter: invert(1) grayscale(1) brightness(250%);
+	}
+	/*arrow*/
+	.T-P-atE .T-P-atC, .T-P-atF .T-P-atC, .T-P-atE .T-P-atD, .T-P-atF .T-P-atD
+	{
+		border-color: transparent var(--hover-background) !important;
 	}
 
 	/*Select/action icons*/
