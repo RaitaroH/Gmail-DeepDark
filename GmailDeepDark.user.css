@@ -2,7 +2,7 @@
 @name Gmail DeepDark
 @namespace github.com/RaitaroH/Gmail-DeepDark
 @homepageURL https://github.com/RaitaroH/Gmail-DeepDark
-@version 1.0.0
+@version 1.0.1
 @updateURL https://rawgit.com/RaitaroH/Gmail-DeepDark/master/GmailDeepDark.user.css
 @description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (Gmail dark theme)
 @author RaitaroH
@@ -140,7 +140,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*1.0.0*/
+/*1.0.1*/
 
 	/*Main color variables*/
 	:root
@@ -947,5 +947,135 @@
 	{
 		filter: invert(1);
 		opacity: .8 !important;
+	}
+   
+    /*Settings*/
+    /*title*/
+	.dt
+	{
+		color: var(--main-color) !important;
+	}
+	/*tabs*/
+	.v .f1, .v .f1 .f0
+	{
+		color: var(--dimmer-text) !important;
+	}
+	/*selected and hover over tabs*/
+	.v .fZ
+	{
+		box-shadow: inset 0 -2px 0 0 var(--main-color) !important;
+	}
+	.v .fZ .f0, .v .f1:hover, .v .f1 .f0:hover
+	{
+		color: var(--main-color) !important;
+	}
+	/*main body*/
+	.r4, .alO
+	{
+		background: var(--main-background) !important;
+	}
+	/*separators*/
+	.r7 td, .al8, .al7
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.rZ
+	{
+		background: var(--hover-background) !important;
+	}
+	/*links*/
+	.sA, .r4 .e, .el, .alP
+	{
+		color: var(--main-color) !important;
+	}
+	/*text style*/
+	.qK, .qL
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	/*warning*/
+	.l7
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	/*saving*/
+	.vX .vh
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	/*text inputs*/
+	.Ar, .v9 input
+	{
+		border: 1px solid var(--hover-background) !important;
+	}
+	.Ar:focus, .Ar:hover, .Ar:active,
+	.v9 input:hover
+	{
+		border-color: var(--main-color) !important;
+	}
+	/*hover over labels*/
+	.Ze
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	/*create new label x*/
+	span.Kj-JD-K7-Jq
+	{
+		filter: invert(1);
+	}
+	/*blue button*/
+	div.Kj-JD-Jl > button.J-at1-atl, div.Kj-JD-Jl > button.J-at1-auR
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
+	/*cancel button*/
+	div.Kj-JD-Jl > button, .bBh .Kj-JD-Jl > .J-at1-auR
+	{
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	div.Kj-JD-Jl > button:hover, .bBh .Kj-JD-Jl > .J-at1-auR:hover
+	{
+		filter: brightness(110%);
+	}
+	/*advanced settings*/
+	.bAY .rm
+	{
+		color: var(--main-text) !important;
+	}
+	/*offline*/
+	.PS
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*themes*/
+	.a80.Kj-JD-K7, .a8Y.Kj-JD-Jl
+	{
+		border-color: var(--hover-background) !important;
+		box-shadow: none !important;
+	}
+	.a8Y > .T-I-ax7
+	{
+		color: var(--main-text) !important;
+		background: var(--second-background) !important;
+	}
+	.a8Y > .T-I-ax7:hover
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*Configure inbox*/
+	.aJ7 .aI0
+	{
+		border-color: var(--second-background) !important;
+	}
+	.T-Jo-Jp, .T-Jo
+	{
+		filter: invert(1);
 	}
 }
