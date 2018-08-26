@@ -2,7 +2,7 @@
 @name Gmail DeepDark
 @namespace github.com/RaitaroH/Gmail-DeepDark
 @homepageURL https://github.com/RaitaroH/Gmail-DeepDark
-@version 1.0.2
+@version 1.0.3
 @updateURL https://rawgit.com/RaitaroH/Gmail-DeepDark/master/GmailDeepDark.user.css
 @description Emails should be written and read in the dark. May the dark be kinder on thine eyes. (Gmail dark theme)
 @author RaitaroH
@@ -140,7 +140,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*1.0.2*/
+/*1.0.3*/
 
 	/*Main color variables*/
 	:root
@@ -811,7 +811,8 @@
 	.hx .hb, .go, .ig .g3, .hI .g3, .iv .g3, .im p, .im > p:nth-child(1), .im,
 	#\:si > p:nth-child(2), #\:sc > p:nth-child(2),
 	p[style*="font-size:small"],
-	.md.mj, .aeU .ma, .ma .mb, .ae3 .l6
+	.md.mj, .aeU .ma, .ma .mb, .ae3 .l6,
+	.brc
 	{
 		color: var(--dimmer-text) !important;
 	}
@@ -866,6 +867,11 @@
 	.aHq, .gt a
 	{
 		color: var(--main-color) !important;
+	}
+	/*right click*/
+	.J-M .J-N-Jo, .J-M .J-N-JX
+	{
+		filter: invert(1);
 	}
 
 	/*Compose*/
