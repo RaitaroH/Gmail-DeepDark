@@ -25,7 +25,7 @@ Also, credit where credit is due for the color palettes down bellow. ([@KDE](htt
 * Stylus - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
 
 ### Install this theme:
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-3daee9.svg?longCache=true&style=for-the-badge)](https://gitlab.com/RaitaroH/Gmail-DeepDark/raw/master/GmailDeepDark.user.css)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-3daee9.svg?longCache=true&style=for-the-badge)](https://github.com/RaitaroH/Gmail-DeepDark/raw/master/GmailDeepDark.user.css)
   >Installs directly from this repository.
   >This is only available using Stylus (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
 
